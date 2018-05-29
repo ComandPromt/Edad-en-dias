@@ -1,0 +1,419 @@
+
+#menu01 {
+padding:0px;
+margin: 5px;
+
+}
+  /* el menú en si mismo */
+  .mi-menu  {
+    border-radius: 5px;
+    list-style-type: none;/*
+    margin: 0 auto 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 80px; 
+
+    /* el color de fondo */
+    
+  }
+
+  /* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */
+  .mi-menu  br { display:none; }
+
+  /* cada item del menu */
+  .mi-menu  li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .mi-menu li a {
+    
+    color: white;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+   
+    padding: 0px 34px;
+    margin: 0px 0;
+    text-decoration: none;
+    /* animamos el cambio de color de los textos */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  /* eliminamos los bordes del primer y el último */
+  .mi-menu li:first-child a { border-left: none; }
+  .mi-menu li:last-child a{ border-right: none; }
+  /* efecto hover cambia el color */
+  .mi-menu li:hover > a { color: Crimson; }
+
+  /* los submenús */
+  .mi-menu ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: green;
+    background: -moz-linear-gradient(blue,green);
+    background: -webkit-linear-gradient(blue,green);
+    background: -o-linear-gradient(blue,green);
+    background: -ms-linear-gradient(blue,green);
+    background: linear-gradient(blue,green);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+
+  /* son visibes al poner el cursor encima */
+  .mi-menu li:hover > ul { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .mi-menu ul li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .mi-menu li:hover > ul li {
+    height: 36px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .mi-menu ul li a {
+    border: none;
+    border-bottom: 1px solid #111;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 100px;
+  }
+  /* el último n otiene un borde */
+  .mi-menu ul li:last-child a { border: none; }
+
+  .mi-menu ul:last-child{
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: green;
+    background: -moz-linear-gradient(#0B3B0B,black);
+    background: -webkit-linear-gradient(#0B3B0B,black);
+    background: -o-linear-gradient(#0B3B0B,black);
+    background: -ms-linear-gradient(#0B3B0B,black);
+    background: linear-gradient(#0B3B0B,black);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+  
+  /* son visibes al poner el cursor encima */
+  .mi-menu li:hover > ul:last-child { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .mi-menu ul:last-child li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .mi-menu li:hover > ul:last-child li {
+    height: 40px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .mi-menu ul:last-child li a {
+    border: none;
+    border-bottom: none;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 100px;
+  }
+  ul.menu_sem
+  {
+	padding: 0 0 0 0;
+	width: 120px;
+}
+ul.menu_5
+{
+	padding:0 0 0 0;
+	width: 130px;
+	
+}
+ul.menu_6
+{
+	padding: 0 0 0 0;
+	width: 120px;
+	
+}
+ul.menu_7
+{
+	padding: 0 0 0 0;
+	width: 125px;
+	
+}
+
+#agrupar_mikel
+{
+background: grey;
+width: 930px;
+height: auto;
+padding: 10px;
+margin: 0 0 0 10%;
+}
+aside#menu_derecha
+{
+width: 170px;
+background: red;
+text-align:center;
+}
+
+
+
+
+
+/*MENU left*/
+
+
+
+
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+#mikel/* li desplegable dentro de clearfix */
+{
+float: left;
+background: none;
+}
+.clearfix li
+{
+
+    background: -moz-linear-gradient(#DAB7FE,black);
+    background: -webkit-linear-gradient(#DAB7FE,black);
+    background: -o-linear-gradient(#DAB7FE,black);
+    background: -ms-linear-gradient(#DAB7FE,black);
+    background: linear-gradient(#DAB7FE,black);
+
+
+}
+/* MENU */
+#nav { width: 170px;
+ margin: 0;
+  padding: 0 0 0 0;
+  font: bold 15px Arial;
+  color: #1d191a;
+  background: #f2ede7;
+      border-bottom: 1px solid #000;
+    border-top: 1px solid #051B05;
+	    border-radius: 5px;
+		
+}
+#nav  li {
+
+	z-index: 30;
+  position: relative;
+  float: top; /* CAMBIADO "LEFT" */
+  padding: 0 ; margin: 10px 0 10px 0;
+  list-style: none;
+  border-bottom: 0px solid #000;
+  border-top: 0px solid #051B05;
+	
+}/*
+  #nav  li:first-child { border-top: none;}/* CAMBIADO left*top*/
+
+#nav  li a { 
+	
+  display: block; 
+  color: white;  /* COLOR LETRAS */
+  text-decoration: none; line-height: 23px;
+  
+  
+}
+#nav  li.list a { position: relative; }
+#nav  li a span { display: none; position: absolute; width: 25px; height: 14px; bottom: -15px; left: 35%; z-index: 31; background: none;  }
+#nav  li:hover a span { display: block }
+
+  #nav  li:first-child {border-left: none;}/*
+  #nav  li:last-child { border-bottom: none}/* CAMBIADO */
+  #nav  li.on { padding: 0;}
+  #nav  li.on a {
+    padding: 0 14px;
+    background: #0093dc; 
+    color: #fff; 
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+#nav  li:hover div { display: block;}
+#nav  li div { 
+  display: none;
+  position: absolute; left: 0; 
+  width: auto; padding-top: 0;
+  margin: -50px 0 0 170px;/* CAMBIADO "la lista pa la derexa"*/
+  
+  
+}
+
+#nav  li:last-child div {
+  left: auto;
+  right: 0
+}
+  #nav  li div:before {
+     content:"";
+     position:absolute;
+     z-index:-1;
+     top:13px;
+     left:0;
+     right:-4px;
+     bottom:-4px;
+     background:#f2f2f2;
+  }
+
+  #nav  li div.col-1 { width: 210px;}
+  #nav  li div.col-2 { width: 390px;}
+  #nav  li div.col-3 { width: 570px;}
+  #nav  li div.col-4 { width: 755px;}
+  #nav  li div.col-5 { width: 930px;}
+  
+#nav  li div span { 
+border-right: 4px solid #f2f2f2;
+border-bottom: 4px solid #f2f2f2;
+display: block;
+}
+/* EL MENU DE LA DEREXA*/
+#nav  ul 
+{
+	-moz-box-shadow: rgb(150,150,150) 5px 5px;
+-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+box-shadow: black 5px 5px;
+
+	margin: 0; 
+	padding: 17px 20px; 
+	background: -moz-linear-gradient(#DAB7FE,black);
+    background: -webkit-linear-gradient(#DAB7FE,black);
+    background: -o-linear-gradient(#DAB7FE,black);
+    background: -ms-linear-gradient(#DAB7FE,black);
+    background: linear-gradient(#DAB7FE,black);
+	-webkit-border-radius: 0 5px 5px 5px; -moz-border-radius: 0 5px 5px 5px; border-radius: 0 5px 5px 5px; 
+
+	
+}
+#nav  li div ul li { width: 154px; border: none; border-left: 1px solid #ebe7e2; margin: 0; padding: 0 5px 0 20px;  }
+#nav  li div ul li:first-child { padding-left: 0  }
+#nav  li div ul ul { border: none; margin: 0; padding: 0; }
+#nav  li div ul ul li { border: none;  margin: 0; padding: 0;}
+
+#nav  li div h3, #nav  li div h3 a, #nav  li.on div h3 a { font: normal 11px arial; color: blue; text-transform: uppercase; text-decoration: none;	}
+  #nav  li div h3 a:hover { color: #fc7900; text-decoration: underline; background: none}
+#nav  li div a, 
+#nav  li.on div a {
+  font: normal 11px/16px arial;
+  padding: 0;
+  color: white;
+  background: none;
+  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; 
+}
+#nav  li div a:hover { color: #fff; background: #ff7e00; margin-left: -5px; padding-left: 5px;}
+ul#nav.clearfix
+{
+
+    background: -moz-linear-gradient(#DAB7FE,black);
+    background: -webkit-linear-gradient(#DAB7FE,black);
+    background: -o-linear-gradient(#DAB7FE,black);
+    background: -ms-linear-gradient(#DAB7FE,black);
+    background: linear-gradient(#DAB7FE,black);
+	
+}
+/*FIN MENU left*/
+
+/*PRODUCTOS   */
+
+
+#contenido {
+	
+	position: background;
+	margin: 0px auto auto 5px;
+	border:0px;
+	width: 100%;
+	
+
+}
+
+
+
+
+
+
+
+
+/*---------------------------ESTILOS GENERALES------------------------------------
+
+--------------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 24px;
+	color: #498323;
+	margin: 0px;
+	text-align: center;
+}
+
+h2 {
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#498323;
+	margin:0px;
+}
+
+a { 
+	color:#498323; 
+	text-decoration: none; 
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+a:hover { 
+  color: #5A8840;
+  text-decoration: underline; 
+}
+
+.Estilo1 {
+	color: #00CC33;
+	font-weight: bold;
+}
+
+#DivisorDesplegable{
+
+  z-index:100;
+} 
+
